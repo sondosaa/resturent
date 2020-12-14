@@ -1,0 +1,298 @@
+body{
+  font-family:'Yeon Sung';
+  background-image:url(../images/cover2.jpg) ;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  height:5600px;
+  scroll-behavior: smooth;
+ 
+}
+html{
+scroll-behavior: smooth;
+}
+.c_nav,footer{
+  background-color: #C9C1AC;
+
+}
+ .icons a:hover
+ {
+  color: white;
+  transition: all 2s ease-in-out;
+ }
+ .icons a
+ {
+  color:black;
+ } 
+ span{
+   color: black;
+ }
+ .banner{
+   padding-top:250px ;
+ }
+ .banner h2{
+ animation-name:fromLeftRight ;
+ animation-duration: 3s;
+ animation-delay: 1s;
+ opacity: 0;
+ animation-fill-mode: forwards;
+ }
+
+ @keyframes fromLeftRight{
+   0%{transform: translateX(-100px);
+    opacity: 0;
+   }
+   50%{  transform: translateX(10px);
+   }
+   100%{
+    transform: translateX(0);
+    opacity: 1;
+  
+   }
+ }
+ @keyframes fromRightleft{
+   0%{transform: translateX(100px);
+    opacity: 0;
+   }
+   50%{  transform: translateX(10px);
+   }
+   100%{
+    transform: translateX(0);
+    opacity: 1;
+  
+   }
+ }
+ .info{
+   
+   border-top: dotted 6px black;
+   border-bottom: dotted 6px black;
+   
+ }
+ .online_order:hover{
+   background-color: white;
+   color:black;
+   transition: all 2s ease-in-out;
+   
+ }
+ .online_order{
+  opacity: 0;
+  animation-name:fromRightleft ;
+  animation-duration: 3s;
+  animation-delay: 1s;
+animation-fill-mode: forwards;
+ }
+ .arrow a:hover{
+  color:white;
+ }
+ .arrow {
+  
+  animation-name:topDown ;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite
+ }
+ @keyframes topDown{
+  0%{transform: translatey(-10px);
+  }
+ 
+  25%
+  {  transform: translatey(10px);
+  }
+  50%
+  {  transform: translatey(-10px);
+  }
+  75%
+  {  transform: translatey(10px);
+  }
+
+  100%{
+   transform: translatey(-10px);
+   opacity: 1;
+  }
+  }
+  .f_nav {
+    font-size:22px;
+  
+  }
+  .f_nav a{
+    color: black !important ;
+  }
+  .nav-item a:hover{
+    color:white !important;
+    transition: all 2s ease-in-out;
+  }
+  .navbar-brand a:hover {
+    color:white !important;
+    transition: all 2s ease-in-out;
+    font-size: large;
+  }
+  .navbar-text a:hover
+  {
+    color:white !important;
+    transition: all 2s ease-out;
+    font-size: large;
+  }
+  .fixed-top{
+    position: fixed; 
+    top: 0px; 
+  
+  }
+  
+  .item-link
+  {
+   position:absolute;
+   top: 45%;
+   left:30%;
+   opacity: 0;
+   transition: 2s all ease-in-out;
+   border-top: solid 1px black;
+   border-bottom: solid 1px black;
+   color:black;
+   transition: all 2s ease-in-out;
+
+  }
+  .img-pos
+  {
+    position: relative;
+     transition: all 2s ease-in-out;
+     overflow: hidden;
+  }
+  .img-pos:hover
+  {
+   outline: solid 5px white ;
+   outline-offset: 0.3rem;
+  }
+  .img-item
+  {
+    transition: all 2s ease-in-out;
+  }
+  .img-pos:hover .img-item
+  {
+   transform: scale(1.2);
+   
+  
+  }
+ .img-pos:hover .item-link
+  {
+   opacity:1;
+   color: #242424;
+  }
+  .item-link:hover
+  {
+  color: white;
+  background-color:#b8b4b4;
+  padding: 3px;
+  }
+.menue
+{
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  
+}
+.menu{
+  padding-top:50px ;
+  font-family:'Yeon Sung';
+  margin-bottom: 15px ;
+  margin-top:20px ;
+}
+ .menue_font{
+   font-size:16px ;
+   max-width:100%;
+   margin-left:0.25px ;
+ } 
+
+.salads{
+  width: 140px;
+  height: 101;
+}
+.special-item
+{
+margin-top:30px;
+}
+.about{
+  color: black;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.about_img{
+  width: 200px;
+  height: 150px;
+  transition: all 2s ease-in-out;
+}
+.about_img:hover
+{
+transform: rotate(10deg); 
+z-index: 40;
+opacity: 1;
+}
+.first-image-row{
+  position: relative;
+}
+.middle_image{
+  position: absolute;
+  top:40%;
+  left:25% ;
+  z-index: 20;
+}
+.last_images{
+  margin-top:90px;
+  z-index: 30;
+}
+.rev-img
+{
+  width: 100px;
+  height: 100px;
+}
+
+.reviews{
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)); 
+  padding-top:40px;
+  padding-bottom:100px;
+  max-width:100%;
+ display:block;
+
+}
+
+.rev_img{
+  width: 150px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left:30px;
+}
+.font_rev{
+  color: black;
+}
+.carousel_rev
+{
+  width:1000px;
+transform:skew(-20deg);
+}
+.i_team{
+  color: black;
+}
+.card-img-top{
+  
+  height: 200px;
+}
+.contact{
+  background: rgba(0, 0, 0, 0.8);
+}
+.c_font{
+  font-size: 24px;
+  color: white;
+}
+.info-icons a{
+  color: black;
+}
+footer{
+  max-width:100%;
+}
+footer p
+{
+font-size: large;
+}
+.teams
+{
+max-width:100%;
+}
